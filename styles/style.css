@@ -285,4 +285,8 @@ option {
     button {
         width: 100%;
     }
+
+    .succes-section button {
+        width: 160px;
+    }
 }
