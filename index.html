@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ddroidd | Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="navbar">
+        <img src="assets/ddroidd_logo.svg" font-weight="300" alt="" class="logo">
+        <a href="index.html">
+            <h1>Autumn - Winter Bootcamp</h1>
+        </a>
+        <div class="hidden">
+
+        </div>
+    </div>
+
+    <section class="form-section">
+        <h2>Application Form</h2>
+        
+        <form action="success.html" method="GET" class="form">
+
+            <h3>Contact Information</h3>
+
+            <div class="input--box">
+                <div class="field">
+                    <p>First Name<span>*</span></p>
+                    <input type="text" placeholder="First Name" id="first-name">
+                </div>
+                <div class="field">
+                    <p>Last Name<span>*</span></p>
+                    <input type="text" placeholder="Last Name" id="last-name">
+                </div>
+            </div>
+
+            <div class="input--box">
+                <div class="field">
+                    <p class="weight-xs">Phone Number<span>*</span></p>
+                    <input type="text" placeholder="+40755824673" id="phone">
+                </div>
+                <div class="field">
+                    <p class="weight-xs">Email address<span>*</span></p>
+                    <input type="text" placeholder="eample@mail.com" id="email">
+                </div>
+            </div>
+
+            <h3>Address</h3>
+            <div class="field">
+                <p class="weight-xs">Address Line 1<span>*</span></p>
+                <input type="text" placeholder="Street name and number" id="address-1">
+            </div>
+            <div class="field">
+                <p class="weight-xs">Address Line 2</p>
+                <input type="text" placeholder="Suite, apartment" id="address-2">
+            </div>
+            <div class="input--box2">
+                <div class="field--2">
+                    <p class="weight-xs">Country<span>*</span></p>
+                    <select id="country--options">
+                        <option value="" disabled hidden selected>Country</option>                    
+                    </select>
+                </div>
+                <div class="field--2">
+                    <p class="weight-xs">State</p>
+                    <select id="state--options">
+                        <option value="" disabled hidden selected>State</option>                    
+                    </select>
+                </div>
+                <div class="field--2">
+                    <p class="weight-xs">City<span>*</span></p>
+                    <select id="city--options">
+                        <option value="" disabled hidden selected>City</option>                    
+                    </select>
+                </div>
+            </div>
+
+            <div class="error-submit">
+                <div class="errors">
+                    <!-- <p class="weight-xs popup">Please fix the following errors to proceed:</p> -->
+                    <!-- <ul>
+                        <li>First name is required</li>
+                        <li>Last name is required</li>
+                        <li>Wrong phone number format</li>
+                        <li>Email is required</li>
+                        <li>Address is required</li>
+                        <li>City is required</li>
+                    </ul> -->
+                </div>
+                <button type="">Join Us</button>
+            </div>
+
+        </form>
+    </section>
+    
+    <script src="src/validation.js"></script>
+    <script src="src/select.js"></script>
+</body>
+</html>
